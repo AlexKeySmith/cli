@@ -21,20 +21,21 @@ namespace Microsoft.DotNet.Cli.Build
 
         public static readonly string[] TestProjects = new[]
         {
-            "EndToEnd",
-            "dotnet.Tests",
-            "dotnet-publish.Tests",
-            "dotnet-compile.Tests",
-            "dotnet-compile.UnitTests",
-            "dotnet-build.Tests",
-            "dotnet-pack.Tests",
-            "dotnet-resgen.Tests",
-            "dotnet-run.Tests",
-            "Microsoft.DotNet.Cli.Utils.Tests",
-            "Microsoft.DotNet.Compiler.Common.Tests",
-            "Microsoft.DotNet.ProjectModel.Tests",
-            "Microsoft.Extensions.DependencyModel.Tests",
-            "ArgumentForwardingTests"
+            // "EndToEnd",
+            // "dotnet.Tests",
+            // "dotnet-publish.Tests",
+            // "dotnet-compile.Tests",
+            // "dotnet-compile.UnitTests",
+            // "dotnet-build.Tests",
+            // "dotnet-pack.Tests",
+            // "dotnet-resgen.Tests",
+            // "dotnet-run.Tests",
+            // "Microsoft.DotNet.Cli.Utils.Tests",
+            // "Microsoft.DotNet.Compiler.Common.Tests",
+            // "Microsoft.DotNet.ProjectModel.Tests",
+            // "Microsoft.Extensions.DependencyModel.Tests",
+            // "ArgumentForwardingTests"
+            "dotnet-projectmodel-server.Tests"
         };
 
         [Target(nameof(PrepareTargets.Init), nameof(SetupTests), nameof(RestoreTests), nameof(BuildTests), nameof(RunTests), nameof(ValidateDependencies))]
